@@ -11,7 +11,7 @@
 (function () {
     'use strict';
 
-    const BRAIN_ROT_PHRASE = 'i embrace true barhah';
+    const BRAIN_ROT_PHRASE = 'I embrace true barhah';
 
     document.querySelectorAll('li.buy').forEach(li => {
         const skillNameEl = li.querySelector('b');
@@ -29,8 +29,8 @@
                     '"' + BRAIN_ROT_PHRASE + '"'
                 );
                 if (input === null) return;
-                if (input.trim().toLowerCase() !== BRAIN_ROT_PHRASE) {
-                    alert('Incorrect phrase. Purchase cancelled.');
+                if (input.trim() !== BRAIN_ROT_PHRASE) {
+                    alert('Incorrect phrase. Barhah averted.');
                     return;
                 }
             } else {
